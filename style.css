@@ -27,7 +27,7 @@ input[type="number"],
 input[type="password"],
 input[type="tel"],
 select {
-  width: %;
+  width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -41,7 +41,7 @@ input[type="radio"] {
 
 input[type="submit"] {
   padding: 10px 20px;
-  background-color: #4e43e6;
+  background-color: #a49fe1;
   color: #c7dae4;
   border: none;
   border-radius: 4px;
@@ -49,5 +49,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #6ca5de;
+  background-color: #76ace1;
 }
