@@ -20,6 +20,10 @@
     align-items: center;
     height: vh;
   }
+
+  .option-label {
+    margin-right: 10px;
+  }
 </style>
 
 </head>
@@ -48,7 +52,7 @@
 
     <label for="nacionalidad">Nacionalidad:</label>
     <select name="nacionalidad" class="drp">
-      <option value="">Seleccione</option>
+      <option value="" selected> Seleccione</option>
       <option value="AF">Afganistán</option>
       <option value="AL">Albania</option>
       <option value="DE">Alemania</option>
@@ -113,7 +117,7 @@
       <option value="AE">Emiratos Árabes Unidos</option>
       <option value="ER">Eritrea</option>
       <option value="SI">Eslovenia</option>
-      <option value="ES" selected>España</option>
+      <option value="ES">España</option>
       <option value="US">Estados Unidos</option>
       <option value="EE">Estonia</option>
       <option value="ET">Etiopía</option>
@@ -290,28 +294,29 @@
     
     <div class="radio-columns">
       <div class="radio-column">
-        <label>Estado Civil:</label>
-        <input id="married" type="radio" name="estatus" value="casado" required />
-        <label for="married">Casado(a)</label>
-      </div>
-    
-      <div class="radio-column">
-        <input id="single" type="radio" name="estatus" value="soltero" required />
-        <label for="single">Soltero(a)</label>
-      </div>
-    </div>
-    
-    <div class="radio-columns">
-      <div class="radio-column">
-        <input id="concubinage" type="radio" name="estatus" value="concubino" required />
-        <label for="concubino">Unión Libre(a)</label>
-      </div>
-    
-      <div class="radio-column">
-        <input id="widower" type="radio" name="estatus" value="viudo" required />
-        <label for="widower">Viudo(a)</label>
-      </div>
-    </div>
+        
+        <label for="estado-civil">Estado Civil:</label>
+        <div class="radio-columns">
+          <div class="radio-column">
+            <input id="married" type="radio" name="estatus" value="casado" required />
+            <label for="married" class="option-label">Casado(a)</label>
+          </div>
+          <div class="radio-column">
+            <input id="single" type="radio" name="estatus" value="soltero" required />
+            <label for="single" class="option-label">Soltero(a)</label>
+          </div>
+        </div>
+        
+        <div class="radio-columns">
+          <div class="radio-column">
+            <input id="concubinage" type="radio" name="estatus" value="concubino" required />
+            <label for="concubinage" class="option-label">Concubinato</label>
+          </div>
+          <div class="radio-column">
+            <input id="widower" type="radio" name="estatus" value="viudo" required />
+            <label for="widower" class="option-label">Viudo(a)</label>
+          </div>
+        </div>
 
     Codigo de Area
     <select name="codigoarea" id="codigo" required/>
@@ -374,17 +379,22 @@
   <option value="Universitario">Universitario</option>
 </select>
 
-    <label for="trabaja">Trabaja:</label>
+<div class="radio-columns">
+  <div class="radio-column">
+    <label for="trabaja" class="option-label">Trabaja:</label>
     <input type="radio" id="trabaja" name="trabaja" value="si" required />
-    <label for="trabaja">Sí</label>
+    <label for="trabaja" class="option-label">Sí</label>
     <input type="radio" id="notrabaja" name="trabaja" value="no" required />
-    <label for="notrabaja">No</label><br />
-
-    <label for="buscatrabajo">Busca Trabajo:</label>
+    <label for="notrabaja" class="option-label">No</label>
+  </div>
+  <div class="radio-column">
+    <label for="buscatrabajo" class="option-label">Busca Trabajo:</label>
     <input type="radio" id="buscatrabajo" name="buscatrabajo" value="si" required />
-    <label for="buscatrabajo">Sí</label>
+    <label for="buscatrabajo" class="option-label">Sí</label>
     <input type="radio" id="nobuscatrabajo" name="buscatrabajo" value="no" required />
-    <label for="nobuscatrabajo">No  <br>
+    <label for="nobuscatrabajo" class="option-label">No</label>
+  </div>
+</div>
    
     <input type="submit" value="Enviar" />
   </form>

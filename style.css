@@ -27,7 +27,7 @@ input[type="number"],
 input[type="password"],
 input[type="tel"],
 select {
-  width: 100%;
+  width: %;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -49,5 +49,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #a5a9ad;
+  background-color: #6ca5de;
 }
